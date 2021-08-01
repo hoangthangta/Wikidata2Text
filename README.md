@@ -1,2 +1,2 @@
 # Wikidata2Text
-Wikidata claims or statements to natural language 
+Wikidata claims or statements to Wikipedia sentences. We are updating the guiline...
