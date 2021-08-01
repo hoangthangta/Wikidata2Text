@@ -10,8 +10,8 @@ from wiki_core import *
 from read_write_file import *
 import traceback
 
-file_name = 'p26' # predicate property
-file_name_output = 'output_' + file_name + '.csv'
+file_name = 'p54' # predicate property
+file_name_output = 'data/output_' + file_name + '.csv'
 page_list = read_from_csv_file('data/' + file_name + '.csv',  ',', 1)
 page_list = sorted(list(set(page_list))) #filter repetitive pages and sort by alphabet
     
@@ -31,7 +31,7 @@ for i, page in enumerate(page_list):
         root = get_xml_data_by_title(page)
         wikidataID = get_wikidata_id(root) #wikidataID
         rootwikidata = get_wikidata_root(wikidataID)
-        print(wikidataID, rootwikidata)
+        #print(wikidataID, rootwikidata)
         
         text = html_content(root)
         
@@ -50,9 +50,9 @@ for i, page in enumerate(page_list):
         page_name = get_label(rootwikidata)
         #print('page_name: ', page_name)
         
-        short_description = get_description(rootwikidata)
-
-        #print('short_description: ', short_description)     
+        #short_description = get_description(rootwikidata)
+        #print('short_description: ', short_description)   
+        
         analyze_sentence(sentences, page_name, wikidataID, claim_list, file_name_output)
         
         gc.collect() #remove cache
