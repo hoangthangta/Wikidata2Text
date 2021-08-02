@@ -8,12 +8,12 @@ We have two folders for the data:
 
 # How to collect data
 At first, we have to collect the pair of (item, page) via Wikidata query server. In this project, we store several files for Wikidata properties as following:
-* data/p108.csv
-* data/p166.csv
-* data/p26.csv
-* data/p39.csv
-* data/p54.csv
-* data/p69.csv
+* `data/p108.csv`
+* `data/p166.csv`
+* `data/p26.csv`
+* `data/p39.csv`
+* `data/p54.csv`
+* `data/p69.csv`
 
 Open file "collect_data.py" and check these lines before running the command: `python collect_data.py`
 
