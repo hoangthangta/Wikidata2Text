@@ -6,14 +6,14 @@ We have two folders for the data:
 * `Our_data`: is the folder containing all of our data for the paper.
 * `Data`: this folder is for the experiment, we already set some data files for testing purposes here.
 
-# How to collect data
+# How to collect data?
 At first, we have to collect the pairs of `(item, page)` via Wikidata query server. In this project, we store several files for Wikidata properties as following:
-* `data/p108.csv`
-* `data/p166.csv`
-* `data/p26.csv`
-* `data/p39.csv`
-* `data/p54.csv`
-* `data/p69.csv`
+- `data/p108.csv`
+- `data/p166.csv`
+- `data/p26.csv`
+- `data/p39.csv`
+- `data/p54.csv`
+- `data/p69.csv`
 
 Open file `collect_data.py` and check these lines before running the command: `python collect_data.py`
 
@@ -25,4 +25,10 @@ page_list = sorted(list(set(page_list))) # filter repetitive pages and sort by a
 ```
 **The data collection process will take time about several days to a week, consider to hangout your code on the server.**
 
-# How to evaluate your mapping data
+# How to evaluate your mapped data?
+
+To check the mapped data, we use several methods:
+- Entitylinking methods
+- Cumulative rates
+- Noise fitering
+- Relationships between sentence predicates against Wikidata properties and qualifiers
