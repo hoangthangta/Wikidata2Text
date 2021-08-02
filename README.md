@@ -15,7 +15,7 @@ At first, we have to collect the pairs of `(item, page)` via Wikidata query serv
 * `data/p54.csv`
 * `data/p69.csv`
 
-Open file "collect_data.py" and check these lines before running the command: `python collect_data.py`
+Open file `collect_data.py` and check these lines before running the command: `python collect_data.py`
 
 ```
 file_name = 'p54' # predicate property
