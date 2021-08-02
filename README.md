@@ -32,3 +32,6 @@ To check the mapped data, we use several methods:
 - Cumulative rates
 - Noise fitering
 - Relationships between sentence predicates against Wikidata properties and qualifiers
+
+# Contact
+You can contact me by email: tahoangthang@gmail.com
