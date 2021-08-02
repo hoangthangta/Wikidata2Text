@@ -28,7 +28,7 @@ page_list = sorted(list(set(page_list))) # filter repetitive pages and sort by a
 # How to evaluate your mapped data?
 
 To check the mapped data, we use several methods:
-- Entitylinking methods
+- Entity linking methods
 - Cumulative rates
 - Noise fitering
 - Relationships between sentence predicates against Wikidata properties and qualifiers
