@@ -3,8 +3,8 @@ We do the task of translating Wikidata claims or statements, organized as a set 
 
 # Data
 We have two folders for the data:
-* Our_data: is the folder containing all of our data for the paper.
-* Data: this folder is for the experiment, we already set some data files for testing purposes here.
+* `Our_data`: is the folder containing all of our data for the paper.
+* `Data`: this folder is for the experiment, we already set some data files for testing purposes here.
 
 # How to collect data
 At first, we have to collect the pair of (item, page) via Wikidata query server. In this project, we store several files for Wikidata properties as following:
