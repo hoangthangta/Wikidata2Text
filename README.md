@@ -23,5 +23,6 @@ file_name_output = 'data/output_' + file_name + '.csv'  # the output url
 page_list = read_from_csv_file('data/' + file_name + '.csv',  ',', 1) # the input url
 page_list = sorted(list(set(page_list))) #filter repetitive pages and sort by alphabet
 ```
+**The data collection process will take time about several days to a week, consider to hangout your code on the server.**
 
-
+# How to evaluate your mapping data
