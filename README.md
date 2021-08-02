@@ -7,7 +7,7 @@ We have two folders for the data:
 * `Data`: this folder is for the experiment, we already set some data files for testing purposes here.
 
 # How to collect data
-At first, we have to collect the pair of (item, page) via Wikidata query server. In this project, we store several files for Wikidata properties as following:
+At first, we have to collect the pairs of `(item, page)` via Wikidata query server. In this project, we store several files for Wikidata properties as following:
 * `data/p108.csv`
 * `data/p166.csv`
 * `data/p26.csv`
