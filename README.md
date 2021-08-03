@@ -103,7 +103,7 @@ df = pd.read_csv(input_file_name, delimiter='#', dtype=dtypes, usecols=list(dtyp
 get_trained_sentence(df)
 ```
 
-We already evaluated the corpus by these EL methods which stored in folder "`/our_data`". All of these files are in *.csv format with the form:
+We already evaluated the corpus by these EL methods which stored in folder "`/our_data`". For example, check one of these files: `our_data/subject_matching_trained_wat.txt`. All of these files are in *.csv format with the form:
 
 For type matching:
 ```sentence, total_score, current_rows, no_datatype_rows, no_qualifier_rows, sentence_score, sentence_length```
