@@ -125,7 +125,7 @@ Open `test_corpus_estimation.py` and see these lines:
 result_dict = load_corpus('data/output_common2.csv', 'data/wordvectors_common2.txt', 'common2', '#', dtypes, False, True)
 test_convert_corpus_to_measures(result_dict, 'data/output_common2_measures.csv')
 ```
-
+**We already did this step and store as the file "output_common2_measures.csv" in "/data" and "/our_data" folders.**
 Note that the out file `output_common2_measures.csv` will be used to evaluate for all below sections.
 
 **3. Basic statistics**
@@ -155,7 +155,7 @@ Open `test_corpus_estimation.py` and see these lines:
 ```
 input_file_name = 'data/output_common2_measures.csv'   
 df = pd.read_csv(input_file_name, delimiter='#', dtype=dtypes3, usecols=list(dtypes3))
-df = df.sample(frac=1.0)'''
+df = df.sample(frac=1.0)
 
 # noise filtering - Section 6.3 & Table 12
 label_list = df['label'].tolist()
