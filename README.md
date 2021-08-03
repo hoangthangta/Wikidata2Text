@@ -139,6 +139,8 @@ test_statistics()
 
 **4. Cumulative rate**
 
+![alt text](https://github.com/tahoangthang/Wikidata2Text/blob/main/sentence_plot_by_redundant_words.svg?raw=true)
+
 By each Wikidata property, we extract redundant words of their sentences and show them on the plot. Open `test_corpus_estimation.py` and see these lines:
 
 ```
