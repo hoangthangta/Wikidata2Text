@@ -179,6 +179,7 @@ print('result_list: ', result_list)
 We store the result as `our_data/result_noise_filtering.csv`.
 
 **6. Relationships between sentence predicates against Wikidata properties and qualifiers**
+
 Open `test_corpus_estimation.py` and see these lines:
 
 ```
