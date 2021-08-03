@@ -129,7 +129,7 @@ test_convert_corpus_to_measures(result_dict, 'data/output_common2_measures.csv')
 Note that we use "`D:\wiki-news-300d-1M.vec`" in the function `load_corpus()` in the file `corpus_estimation.py`. Download `wiki-news-300d-1M.vec` at https://fasttext.cc/docs/en/english-vectors.html.
 
 **We already did this step and store as the file "output_common2_measures.csv" in "/data" and "/our_data" folders.**
-Note that the out file `output_common2_measures.csv` will be used to evaluate for all below sections.
+Note that the output file `output_common2_measures.csv` will be used to evaluate for all below sections.
 
 **3. Basic statistics**
 
