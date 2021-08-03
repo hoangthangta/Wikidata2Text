@@ -231,7 +231,7 @@ def test_rank_predicate_by_property_and_qualifier(by_qualifier=False):
 # -----------------------------------
 
 # -----------------------------------
-# basic statistics (Section 6.2 & Table 11)
+# basic statistics # (Section 6.2 & Table 11)
 # test_statistics()
 # -----------------------------------
 
