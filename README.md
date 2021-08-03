@@ -118,6 +118,7 @@ For data matching:
 - no_term_rows: is the number of rows that entity linking methods can not get the data.
 
 **2. Evaluation all sentences by metrics (TF, IDF, local_distance, global_distance and their combinations)**
+
 Open `test_corpus_estimation.py` and see these lines:
 
 ```
@@ -127,7 +128,8 @@ test_convert_corpus_to_measures(result_dict, 'data/output_common2_measures.csv')
 
 Note that the out file `output_common2_measures.csv` will be used to evaluate for all below sections.
 
-**2. Basic statistics**
+**3. Basic statistics**
+
 Open `test_corpus_estimation.py` and see these lines:
 
 ```
@@ -135,10 +137,9 @@ basic statistics # (Section 6.2 & Table 11)
 test_statistics()
 ```
 
-**3. Cumulative rate**
-By each Wikidata property, we extract redundant words of their sentences and show them on the plot.
+**4. Cumulative rate**
 
-Open `test_corpus_estimation.py` and see these lines:
+By each Wikidata property, we extract redundant words of their sentences and show them on the plot. Open `test_corpus_estimation.py` and see these lines:
 
 ```
 input_file_name = 'data/output_common2_measures.csv'   
@@ -147,7 +148,8 @@ df = df.sample(frac=1.0)
 test_cumulative_rate(df) # Figure 6
 ```
 
-**3. Noise filtering**
+**5. Noise filtering**
+
 Open `test_corpus_estimation.py` and see these lines:
 
 ```
@@ -176,7 +178,7 @@ print('result_list: ', result_list)
 
 We store the result as `our_data/result_noise_filtering.csv`.
 
-**4. Relationships between sentence predicates against Wikidata properties and qualifiers**
+**6. Relationships between sentence predicates against Wikidata properties and qualifiers**
 Open `test_corpus_estimation.py` and see these lines:
 
 ```
