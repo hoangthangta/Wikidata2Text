@@ -179,42 +179,42 @@ def test_noise_filtering(x_train, x_test, x_true, y_train, y_test, y_all, file_n
 def test_rank_predicate_by_property_and_qualifier(by_qualifier=False):
     predicate_list = []
 
-    result_dict = load_corpus('output_p26.csv', 'wordvectors_p26.txt', 'p26', '#', dtypes, False, False)
+    result_dict = load_corpus('our_data/output_p26.csv', 'wordvectors_p26.txt', 'p26', '#', dtypes, False, False)
     predicate_dict = rank_predicate(result_dict['sen_list'], result_dict['best_sentences'], result_dict['counter'],
                                              result_dict['local_model'], result_dict['global_model'], by_qualifier)
     predicate_list.append(predicate_dict)
     group_dict = group_predicate(predicate_dict, 10, True)
   
 
-    result_dict = load_corpus('output_p39.csv', 'wordvectors_p39.txt', 'p39', '#', dtypes, False, False)
+    result_dict = load_corpus('our_data/output_p39.csv', 'our_data/wordvectors_p39.txt', 'p39', '#', dtypes, False, False)
     predicate_dict = rank_predicate(result_dict['sen_list'], result_dict['best_sentences'], result_dict['counter'],
                                              result_dict['local_model'], result_dict['global_model'], by_qualifier)
     predicate_list.append(predicate_dict)
     group_dict = group_predicate(predicate_dict, 10, True)
 
     
-    result_dict = load_corpus('output_p54.csv', 'wordvectors_p54.txt', 'p54', '#', dtypes, False, False)
+    result_dict = load_corpus('our_data/output_p54.csv', 'our_data/wordvectors_p54.txt', 'p54', '#', dtypes, False, False)
     predicate_dict = rank_predicate(result_dict['sen_list'], result_dict['best_sentences'], result_dict['counter'],
                                              result_dict['local_model'], result_dict['global_model'], by_qualifier)
     predicate_list.append(predicate_dict)
     group_dict = group_predicate(predicate_dict, 10, True)
 
 
-    result_dict = load_corpus('output_p69.csv', 'wordvectors_p69.txt', 'p69', '#', dtypes, False, False)
+    result_dict = load_corpus('our_data/output_p69.csv', 'our_data/wordvectors_p69.txt', 'p69', '#', dtypes, False, False)
     predicate_dict = rank_predicate(result_dict['sen_list'], result_dict['best_sentences'], result_dict['counter'],
                                              result_dict['local_model'], result_dict['global_model'], by_qualifier)
     predicate_list.append(predicate_dict)
     group_dict = group_predicate(predicate_dict, 10, True)
 
 
-    result_dict = load_corpus('output_p108.csv', 'wordvectors_p108.txt', 'p108', '#', dtypes, False, False)
+    result_dict = load_corpus('our_data/output_p108.csv', 'our_data/wordvectors_p108.txt', 'p108', '#', dtypes, False, False)
     predicate_dict = rank_predicate(result_dict['sen_list'], result_dict['best_sentences'], result_dict['counter'],
                                              result_dict['local_model'], result_dict['global_model'], by_qualifier)
     predicate_list.append(predicate_dict)
     group_dict = group_predicate(predicate_dict, 10, True)
     
 
-    result_dict = load_corpus('output_p166.csv', 'wordvectors_p166.txt', 'p166', '#', dtypes, False, False)
+    result_dict = load_corpus('our_data/output_p166.csv', 'our_data/wordvectors_p166.txt', 'p166', '#', dtypes, False, False)
     predicate_dict = rank_predicate(result_dict['sen_list'], result_dict['best_sentences'], result_dict['counter'],
                                              result_dict['local_model'], result_dict['global_model'], by_qualifier)
     predicate_list.append(predicate_dict)
@@ -231,7 +231,7 @@ def test_rank_predicate_by_property_and_qualifier(by_qualifier=False):
 # -----------------------------------
 
 # -----------------------------------
-# basic statistics # (Section 6.2 & Table 11)
+# basic statistics (Section 6.2 & Table 11)
 # test_statistics()
 # -----------------------------------
 
@@ -270,7 +270,7 @@ print('result_list: ', result_list)'''
 
 # -----------------------------------
 # rank qualifiers by predicates - Table 14 & Table 15
-#test_rank_predicate_by_property_and_qualifier(by_qualifier=False) # Table 14
-#test_rank_predicate_by_property_and_qualifier(by_qualifier=True)  # Table 15
+test_rank_predicate_by_property_and_qualifier(by_qualifier=False) # Table 14
+test_rank_predicate_by_property_and_qualifier(by_qualifier=True)  # Table 15
 # -----------------------------------
 #........................................................................................................
