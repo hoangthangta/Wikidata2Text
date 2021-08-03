@@ -179,7 +179,7 @@ def test_noise_filtering(x_train, x_test, x_true, y_train, y_test, y_all, file_n
 def test_rank_predicate_by_property_and_qualifier(by_qualifier=False):
     predicate_list = []
 
-    result_dict = load_corpus('our_data/output_p26.csv', 'wordvectors_p26.txt', 'p26', '#', dtypes, False, False)
+    result_dict = load_corpus('our_data/output_p26.csv', 'our_data/wordvectors_p26.txt', 'p26', '#', dtypes, False, False)
     predicate_dict = rank_predicate(result_dict['sen_list'], result_dict['best_sentences'], result_dict['counter'],
                                              result_dict['local_model'], result_dict['global_model'], by_qualifier)
     predicate_list.append(predicate_dict)
