@@ -72,6 +72,9 @@ To check the mapped data, we use several methods:
 - Relationships between sentence predicates against Wikidata properties and qualifiers
 
 **Entity linking methods**
+We use several entity linking methods: AIDA, Babel (optional), OpenTapioca, TagMe, WAT, Wikifer, and our baseline method mapping terms directly to Wikipedia and Wikidata. The code can be found in the folder `/entity_link`.
 
 # Contact
-You can contact me by email: tahoangthang@gmail.com
+You can contact me by email: 
+- tahoangthang@gmail.com
+- thangth@dlu.edu.vn
