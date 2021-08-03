@@ -74,7 +74,7 @@ To check the mapped data, we use several methods:
 
 **1. Entity linking methods (EL methods)**
 
-We use several entity linking methods: AIDA, Babel (optional), OpenTapioca, TagMe, WAT, Wikifer, and our baseline method mapping terms directly to Wikipedia and Wikidata. These methods can be found in the folder `/entity_link`. The main code is in the file `mapping_estimation.py`.
+We use several entity linking methods: AIDA, Babel (optional), OpenTapioca, TagMe, WAT, Wikifer, and our baseline method mapping terms directly to Wikipedia and Wikidata. These methods can be found in the folder `/entity_linking`. The main code is in the file `mapping_estimation.py`.
 
 We evaluate the mapped results by two types: `type matching`, and `data matching`, over three sentence components: `subject matching`, `object matching`, and `qualifier matching` by `raw text` and `trained text` (neuralcoref). We only apply `trained text` for `subject matching` since there are a lot of pronouns (he, she) in the mapped sentences.
 
