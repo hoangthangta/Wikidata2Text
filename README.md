@@ -125,6 +125,9 @@ Open `test_corpus_estimation.py` and see these lines:
 result_dict = load_corpus('data/output_common2.csv', 'data/wordvectors_common2.txt', 'common2', '#', dtypes, False, True)
 test_convert_corpus_to_measures(result_dict, 'data/output_common2_measures.csv')
 ```
+
+Note that we use "`D:\wiki-news-300d-1M.vec`" in the function `load_corpus()` in the file `corpus_estimation.py`. Download `wiki-news-300d-1M.vec` at https://fasttext.cc/docs/en/english-vectors.html.
+
 **We already did this step and store as the file "output_common2_measures.csv" in "/data" and "/our_data" folders.**
 Note that the out file `output_common2_measures.csv` will be used to evaluate for all below sections.
 
@@ -189,6 +192,8 @@ Open `test_corpus_estimation.py` and see these lines:
 test_rank_predicate_by_property_and_qualifier(by_qualifier=False) # Table 14, without qualifiers
 test_rank_predicate_by_property_and_qualifier(by_qualifier=True)  # Table 15, with qualifiers
 ```
+
+Note that we use "`D:\wiki-news-300d-1M.vec`" in the function `load_corpus()` in the file `corpus_estimation.py`. Download `wiki-news-300d-1M.vec` at https://fasttext.cc/docs/en/english-vectors.html.
 
 We store the results as `/our_data/results_roots_vs_properties2.txt` and `our_data/results_roots_vs_properties_and_qualifiers.txt`.
 
