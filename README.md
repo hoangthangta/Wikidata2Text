@@ -8,6 +8,7 @@ Our paper are currently under review at http://www.semantic-web-journal.net unde
 We have two folders for the data:
 * `Our_data`: is the folder containing all of our data for the paper.
 * `Data`: this folder is for the experiment, we already set some data files for testing purposes here.
+* Note that we use "`#`" as the delimiters for all *.csv files.
 
 # How to collect data?
 At first, we have to collect the pairs of `(item, page)` via Wikidata query server at https://query.wikidata.org/. We use 2 queries:
