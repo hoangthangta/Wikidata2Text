@@ -93,6 +93,16 @@ df = pd.read_csv(input_file_name, delimiter='#', dtype=dtypes, usecols=list(dtyp
 evaluate_object_matching('aida', df) # the output will be store on "/data" folder
 ```
 
+To get the trained text, we use 2 files: `neuralcoref_training.py` and `test_neuralcoref.py`. Here is the content of `test_neuralcoref.py`.
+
+```
+from neuralcoref_training import *
+# output will be stored at "data/output_common2_trained.csv"
+input_file_name = 'data/output_common2.csv' # input
+df = pd.read_csv(input_file_name, delimiter='#', dtype=dtypes, usecols=list(dtypes))
+get_trained_sentence(df)
+```
+
 We already evaluated the corpus by these EL methods which stored in folder "`/our_data`". All of these files are in *.csv format with the form:
 
 For type matching:
@@ -107,6 +117,75 @@ For data matching:
 - match_rows: is the number of rows that match the data.
 - no_term_rows: is the number of rows that entity linking methods can not get the data.
 
+**2. Evaluation all sentences by metrics (TF, IDF, local_distance, global_distance and their combinations)**
+Open `test_corpus_estimation.py` and see these lines:
+
+```
+result_dict = load_corpus('data/output_common2.csv', 'data/wordvectors_common2.txt', 'common2', '#', dtypes, False, True)
+test_convert_corpus_to_measures(result_dict, 'data/output_common2_measures.csv')
+```
+
+Note that the out file `output_common2_measures.csv` will be used to evaluate for all below sections.
+
+**2. Basic statistics**
+Open `test_corpus_estimation.py` and see these lines:
+
+```
+basic statistics # (Section 6.2 & Table 11)
+test_statistics()
+```
+
+**3. Cumulative rate**
+By each Wikidata property, we extract redundant words of their sentences and show them on the plot.
+
+Open `test_corpus_estimation.py` and see these lines:
+
+```
+input_file_name = 'data/output_common2_measures.csv'   
+df = pd.read_csv(input_file_name, delimiter='#', dtype=dtypes3, usecols=list(dtypes3))
+df = df.sample(frac=1.0)
+test_cumulative_rate(df) # Figure 6
+```
+
+**3. Noise filtering**
+Open `test_corpus_estimation.py` and see these lines:
+
+```
+input_file_name = 'data/output_common2_measures.csv'   
+df = pd.read_csv(input_file_name, delimiter='#', dtype=dtypes3, usecols=list(dtypes3))
+df = df.sample(frac=1.0)'''
+
+# noise filtering - Section 6.3 & Table 12
+label_list = df['label'].tolist()
+y_true = []
+for la in label_list:
+    if (la == 'x'): y_true.append(0)
+    else: y_true.append(-1) # outliners
+x_true = []
+df1 = df.loc[:, ['tf2', 'idf2', 'local2', 'global2']] # we use 4 features
+cols = df1.columns
+df[cols] = df[cols].apply(pd.to_numeric, errors='coerce')
+x_true = [list(row[1:]) for row in df[cols].itertuples(name=None)]
+x_true = np.array(np.float32(x_true)) # to avoid buffer overflow
+x_true = MinMaxScaler(feature_range=(0, 100)).fit(x_true).transform(x_true) # fit range [0, 100]
+y_true = np.array(y_true)
+x_train, x_test, y_train, y_test = train_test_split(x_true, y_true, test_size=0.1, random_state=1)
+result_list = test_noise_filtering(x_train, x_test, x_true, y_train, y_test, y_true)
+print('result_list: ', result_list)
+```
+
+We store the result as `our_data/result_noise_filtering.csv`.
+
+**4. Relationships between sentence predicates against Wikidata properties and qualifiers**
+Open `test_corpus_estimation.py` and see these lines:
+
+```
+# rank qualifiers by predicates - Table 14 & Table 15
+test_rank_predicate_by_property_and_qualifier(by_qualifier=False) # Table 14, without qualifiers
+test_rank_predicate_by_property_and_qualifier(by_qualifier=True)  # Table 15, with qualifier
+```
+
+We store the results as `/our_data/results_roots_vs_properties2.txt` and `our_data/results_roots_vs_properties_and_qualifiers.txt`.
 
 # Contact
 You can contact me by email: 
