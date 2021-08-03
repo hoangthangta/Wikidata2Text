@@ -185,7 +185,7 @@ Open `test_corpus_estimation.py` and see these lines:
 ```
 # rank qualifiers by predicates - Table 14 & Table 15
 test_rank_predicate_by_property_and_qualifier(by_qualifier=False) # Table 14, without qualifiers
-test_rank_predicate_by_property_and_qualifier(by_qualifier=True)  # Table 15, with qualifier
+test_rank_predicate_by_property_and_qualifier(by_qualifier=True)  # Table 15, with qualifiers
 ```
 
 We store the results as `/our_data/results_roots_vs_properties2.txt` and `our_data/results_roots_vs_properties_and_qualifiers.txt`.
