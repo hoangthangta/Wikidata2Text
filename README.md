@@ -197,6 +197,9 @@ Note that we use "`D:\wiki-news-300d-1M.vec`" in the function `load_corpus()` in
 
 We store the results as `/our_data/results_roots_vs_properties2.txt` and `our_data/results_roots_vs_properties_and_qualifiers.txt`.
 
+![alt text](https://github.com/tahoangthang/Wikidata2Text/blob/main/relationships_predicates_properties.png?raw=true)
+Relationships between sentence predicates and Wikidata properties.
+
 # Contact
 You can contact me by email: 
 - tahoangthang@gmail.com
