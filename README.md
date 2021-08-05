@@ -1,6 +1,6 @@
 # Wikidata2Text
 
-Wikidata2Text (Wikidata statements to Text - WS2T) is a sub-task of Data2Text. This task is to translate Wikidata claims or statements, organized as a set of triples or quadruples to Wikipedia sentences.  
+Wikidata2Text (Wikidata statements/claims to Text - WS2T) is a sub-task of Data2Text. This task is to translate Wikidata claims or statements, organized as a set of triples or quadruples to Wikipedia sentences.  
 
 Our paper are currently under review at http://www.semantic-web-journal.net under the name "`Mapping Process for the Task: Wikidata Statements to Text as Wikipedia Sentences`". The code is mainly about the data mapping process.
 
