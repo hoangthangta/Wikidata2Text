@@ -65,6 +65,8 @@ page_list = sorted(list(set(page_list))) # filter repetitive pages and sort by a
 **The data collection process will take time about several days to a week, consider to hangout your code on the server.**
 
 # Our data
+
+**Dataset**
 We put all of our data in the folder `/our_data`. We have these outcome datasets:
 - output_common.csv: containing all Wikidata properties that we can have in the data mapping process.
 - output_common2.csv: containing only 6 Wikidata properties: p108, p166, p26, p39, p54, p69
@@ -76,6 +78,21 @@ We put all of our data in the folder `/our_data`. We have these outcome datasets
 - output_p39.csv
 - output_p54.csv
 - output_p69.csv
+
+**An example**
+Here is an example for a mapping of property `P26`:
+```
+type: S1
+subject: Q123849
+predicate: P26
+object: Q22910017
+qualifiers: P580
+raw_sentence: In 1981, Seymour married David Flynn.
+labeled_sentence_1: In [o0:P580-qualifier] , [s] married [o0] [o0] .
+labeled_sentence_2: In [o0:P580-qualifier] , [s] married [o0] .
+order_1: [o0:P580-qualifier],[s],[o0]
+order_2: [o0:P580-qualifier],[s],[o0]
+```
 
 # How to evaluate your mapped data?
 
