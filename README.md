@@ -94,6 +94,12 @@ order_1: [o0:P580-qualifier],[s],[o0]
 order_2: [o0:P580-qualifier],[s],[o0]
 ```
 
+# Mapping method
+
+We do have many complex definitions and minor steps, but if think simply, it is like this figure: 
+
+![alt text](https://github.com/tahoangthang/Wikidata2Text/blob/main/our_data/mapping_data_process_diagram.png?raw=true)
+
 # How to evaluate your mapped data?
 
 To check the mapped data, we use several methods:
