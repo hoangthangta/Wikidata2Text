@@ -64,6 +64,19 @@ page_list = sorted(list(set(page_list))) # filter repetitive pages and sort by a
 ```
 **The data collection process will take time about several days to a week, consider to hangout your code on the server.**
 
+# Our data
+We put all of our data in the folder `/our_data`. We have these outcome datasets:
+- output_common.csv: containing all Wikidata properties that we can have in the data mapping process.
+- output_common2.csv: containing only 6 Wikidata properties: p108, p166, p26, p39, p54, p69
+- output_common2_measures.rar: add metric values (TF, IDF, local distance, global distance, their combinations) to output_common2.csv 
+- output_common2_trained.csv: add `trained raw text` to output_common2.csv 
+- output_p108.csv
+- output_p166.csv
+- output_p26.csv
+- output_p39.csv
+- output_p54.csv
+- output_p69.csv
+
 # How to evaluate your mapped data?
 
 To check the mapped data, we use several methods:
