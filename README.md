@@ -88,6 +88,9 @@ predicate: P26
 object: Q22910017
 qualifiers: P580
 raw_sentence: In 1981, Seymour married David Flynn.
+...
+...
+...
 labeled_sentence_1: In [o0:P580-qualifier] , [s] married [o0] [o0] .
 labeled_sentence_2: In [o0:P580-qualifier] , [s] married [o0] .
 order_1: [o0:P580-qualifier],[s],[o0]
