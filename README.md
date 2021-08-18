@@ -99,9 +99,22 @@ order_2: [o0:P580-qualifier],[s],[o0]
 
 # Mapping method
 
-We do have many complex definitions and minor steps, but if think simply, it is like this figure: 
+We do have many complex definitions and minor steps. The mapping process includes 4 main steps:
+- Subject matching: mandatory
+- Object matching: mandatory
+- Qualifier matching: mandatory
+- External matching (based on object matching): optional
+- Predicate matching: evluate the results later
+
+Have a look at this figure: 
+- Subject matching: He <---> Q1372810
+- Object matching: Bologna <---> Q1893
+- Qualifier matching: July 2011 <---> P580
+- External matching (based on object matching): Serie A <---> Q1893:P118, club <---> Q1893:P31
+- Predicate matching: moved <---> P54 (member of sports team)
 
 ![alt text](https://github.com/tahoangthang/Wikidata2Text/blob/main/our_data/mapping_data_process_diagram.png?raw=true)
+
 
 # How to evaluate your mapped data?
 
