@@ -104,17 +104,16 @@ We do have many complex definitions and minor steps. The mapping process include
 - Object matching: mandatory
 - Qualifier matching: mandatory
 - External matching (based on object matching): optional
-- Predicate matching: evluate the results later
+- Predicate matching: evaluate the results later
 
 Have a look at this figure: 
 - Subject matching: He <---> Q1372810
 - Object matching: Bologna <---> Q1893
 - Qualifier matching: July 2011 <---> P580
 - External matching (based on object matching): Serie A <---> Q1893:P118, club <---> Q1893:P31
-- Predicate matching: moved <---> P54 (member of sports team)
+- Predicate matching: moved <---> P54 (member of sports team), our duty is to check the verb "moved" against P54 with/without P530. Check the last section of this guildline.
 
 ![alt text](https://github.com/tahoangthang/Wikidata2Text/blob/main/our_data/mapping_data_process_diagram.png?raw=true)
-
 
 # How to evaluate your mapped data?
 
@@ -197,7 +196,7 @@ test_statistics()
 
 ![alt text](https://github.com/tahoangthang/Wikidata2Text/blob/main/sentence_plot_by_redundant_words.svg?raw=true)
 
-By each Wikidata property, we extract redundant words of their sentences and show them on the plot. Open `test_corpus_estimation.py` and see these lines:
+By each Wikidata property, we extract redundant words (or `redundant phrases` for the better performance) of their sentences and show them on the plot. Open `test_corpus_estimation.py` and see these lines:
 
 ```
 input_file_name = 'data/output_common2_measures.csv'   
