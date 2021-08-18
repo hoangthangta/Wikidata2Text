@@ -257,5 +257,6 @@ Here is the relationships between sentence predicates and Wikidata properties.
 You can contact me by email: 
 - tahoangthang@gmail.com
 - thangth@dlu.edu.vn
+
 Or check our lab:
 - https://nlp.cic.ipn.mx/
