@@ -6,7 +6,7 @@ from wiki_core import *
 
 class Wikifier():
         
-    def api(text, key='almmyawmnxyoytgnlkmnjasnrgnjcv'):
+    def api(self, text, key='almmyawmnxyoytgnlkmnjasnrgnjcv'):
         url = 'http://www.wikifier.org/annotate-article?lang=en&text=' + urllib.parse.quote(text, safe='')
         url += '&wikiDataClasses=false&userKey=' + key
         print('url: ', url)
